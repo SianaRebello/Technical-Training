@@ -1,19 +1,14 @@
 #include<stdio.h>
 
-/*int main()
+int main()
 {
     int a = 5;
     int b = 2;
-    float c;
+    int c;
 
-    c=(float) a/b;
-    printf("%f", c);
+    c= a+b;
+    printf("%d", c);
 
     return 0;
-}*/
-
-int main()
-{
-    char a= 'B';
-    printf("%d")
 }
+
