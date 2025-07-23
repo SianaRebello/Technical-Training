@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<math.h>
-/*
+//program to understand break 
+
 int main()
 {
     int n;
@@ -11,28 +12,28 @@ int main()
         printf("Monday");
         break;
 
-        case 1:
-        printf("Monday");
-        break;
-        
-         case 2:
+        case 2:
         printf("Tuesday");
         break;
-
+        
          case 3:
         printf("Wednesday");
         break;
 
-         case 1:
-        printf("Monday");
+         case 4:
+        printf("Thursday");
         break;
 
-         case 1:
-        printf("Monday");
+         case 5:
+        printf("Friday");
         break;
 
-         case 1:
-        printf("Monday");
+         case 6:
+        printf("Saturday");
+        break;
+
+         case 7:
+        printf("Sunday");
         break;
 
         
@@ -40,7 +41,8 @@ int main()
 
     }
 }
-*/
+
+//Program to perform add,sub,mul,div
 
 int main()
 {
