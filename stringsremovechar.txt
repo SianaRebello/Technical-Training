@@ -1,0 +1,35 @@
+using namespace std;
+#include <iostream>
+#include<stdlib.h>
+
+char* withoutSplChars(char* x, int n) 
+{
+    char* result = (char*)malloc(n * sizeof(char));
+    int j = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if ((x[i] >= 'a' && x[i] <= 'z') || (x[i] >= 'A' && x[i] <= 'Z') || (x[i] >= '0' && x[i] <= '9'))
+        {
+            result[j++] = x[i];
+        }
+    }
+  
+    return result;
+}
+
+int main()
+ {
+     int i ,n=0;
+     char *p=(char*)malloc(1000*sizeof(char));
+     cin.getline(p, 1000);
+     for(i=0;p[i]!='\0';i++)
+     {
+         n++;
+         
+     }
+     p=(char*)realloc(p,n*sizeof(char));
+     char *q=withoutSplChars(p,n);
+     cout<<q;
+   
+    return 0;
+ }
