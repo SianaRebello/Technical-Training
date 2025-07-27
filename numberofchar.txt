@@ -1,0 +1,26 @@
+using namespace std;
+#include <iostream>
+#include<ctype.h>
+
+int numofchar(char string)
+{
+    int count1=0;
+    while(int i=0;string[i]!='\0';i++)
+    {
+        if(!(isspace(string[i])||isalnum(string[i])))
+        count1++;
+    }
+    return count1;
+    
+}
+
+int main() {
+   char str[100];
+   int count;
+   cout<<"Enter the string"<<endl;
+   cin>>str;
+   count=numofchar(str);
+   cout<<"The number of other characters="<<endl;
+   cout<<count;
+    return 0;
+}
